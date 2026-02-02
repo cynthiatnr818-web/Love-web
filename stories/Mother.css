@@ -1,0 +1,611 @@
+/* Mother 页面 - 温暖家庭风格 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+    color: #5d4037;
+    line-height: 1.6;
+}
+
+.mother-theme {
+    --primary: #8d6e63;
+    --secondary: #d7ccc8;
+    --accent: #ffab91;
+    --warm: #ffccbc;
+    --light: #efebe9;
+}
+
+/* 返回按钮 - 温柔风格 */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border: 2px solid var(--accent);
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+}
+
+.back-button:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* 故事容器 */
+.story-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 头部 - 温馨风格 */
+.story-header {
+    background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+    border: 2px dashed var(--accent);
+}
+
+.header-floral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.floral-left, .floral-right {
+    font-size: 3em;
+    opacity: 0.7;
+}
+
+.header-content h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-family: 'Brush Script MT', cursive;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #795548;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.role-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #5d4037;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 中心区域 */
+.heart-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.main-portrait {
+    flex: 1;
+    position: relative;
+}
+
+.main-portrait img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    filter: sepia(0.1);
+}
+
+.portrait-frame {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 3px solid var(--accent);
+    border-radius: 30px;
+    pointer-events: none;
+}
+
+.heart-quote {
+    flex: 1;
+}
+
+.quote-content {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid var(--accent);
+}
+
+.quote-mark {
+    font-size: 5em;
+    color: var(--accent);
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.quote-content p {
+    font-size: 1.8em;
+    line-height: 1.4;
+    margin: 20px 0;
+    color: #5d4037;
+}
+
+.quote-author {
+    display: block;
+    text-align: right;
+    color: #8d6e63;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* 记忆宝箱 */
+.memory-chest {
+    background: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--secondary);
+}
+
+.memory-chest h2 {
+    color: var(--primary);
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.memory-chest h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.memories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.memory-card {
+    background: #fffaf0;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #ffecb3;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.memory-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--accent);
+}
+
+.memory-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.memory-date {
+    font-size: 0.9em;
+    color: var(--primary);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.memory-card h3 {
+    font-size: 2.5em;
+    color: var(--accent);
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+/* 智慧传承 */
+.wisdom-section {
+    margin-bottom: 60px;
+}
+
+.wisdom-section h2 {
+    color: var(--primary);
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.wisdom-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.wisdom-item {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.wisdom-item h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
+}
+
+.lessons-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lessons-list li {
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--secondary);
+    position: relative;
+    padding-left: 30px;
+}
+
+.lessons-list li::before {
+    content: '🌷';
+    position: absolute;
+    left: 0;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.recipe {
+    background: var(--warm);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.recipe:hover {
+    background: var(--accent);
+    transform: scale(1.05);
+}
+
+/* 家庭相册 */
+.family-album {
+    margin-bottom: 60px;
+}
+
+.family-album h2 {
+    color: var(--primary);
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.album-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.album-item:hover {
+    transform: translateY(-10px);
+}
+
+.album-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.caption {
+    padding: 15px;
+    background: white;
+    text-align: center;
+    color: var(--primary);
+    font-style: italic;
+}
+
+/* 感激之词 */
+.gratitude-section {
+    background: linear-gradient(135deg, #ffecb3 0%, #ffcc80 100%);
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+.gratitude-content h2 {
+    color: var(--primary);
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gratitude-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.gratitude-item {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.gratitude-item h3 {
+    color: var(--accent);
+    margin-bottom:auto;
+}
+.photo-gallery {
+    padding: 3rem 0;
+    margin: 40px 0;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-header h2 {
+    color: #58508d;
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+}
+
+/* 统一网格布局 */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* 统一裁剪区域 */
+.photo-wrapper {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.gallery-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-photo {
+    transform: scale(1.1);
+}
+
+/* 悬停遮罩层 */
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.8); /* 使用好代码的科技蓝 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .photo-hover {
+    opacity: 1;
+}
+
+.hover-icon {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.hover-text {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* 描述区域 */
+.photo-caption {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.photo-caption h4 {
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.photo-caption p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ================================================= 
+   核心升级：模态框 (好代码风格) 
+   ================================================= */
+.photo-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 2000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 1000px;
+    max-height: 95vh;
+    overflow-y: auto;
+    animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-photo-container {
+    width: 100%;
+    max-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.modal-photo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2.5em;
+    color: var(--primary);
+    cursor: pointer;
+    z-index: 2001;
+}
+
+/* ================================================= 
+   保留：时间线 & 其他部分 
+   ================================================= */
+.timeline {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 50px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(10px);
+}
+
+/* ================================================= 
+   动画定义 
+   ================================================= */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================================= 
+   响应式适配 
+   ================================================= */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    .modal-content {
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+    .story-header h1 {
+        font-size: 2.5em;
+    }
+}
