@@ -38,63 +38,63 @@ function openPhotoModal(photoId) {
 }const photoData = {
     1: {
         image: '../images/mother 1.jpg',
-        title: 'talking Mr. karl',
-        date: 'when Mr.Karl was younger',
-        description: 'Your voice is pretty unique.'
+        title: 'Mom lying on bed',
+        date: 'a common day',
+        description: 'smile on your face'
     },
     2: {
         image: '../images/mother 2.jpg',
-        title: 'playing chess',
-        date: 'competition date',
-        description: 'Your command in chess really shows intelligence.'
+        title: 'mom working',
+        date: 'a common day',
+        description: 'I like that hair style'
     },
     3: {
         image: '../images/mother 3.jpg',
-        title: 'hhhh',
-        date: 'a common school day',
-        description: 'focused karl'
+        title: 'eating mom',
+        date: 'a common day',
+        description: 'eating while talking to colleagues'
     },
     4: {
         image: '../images/mother 4.jpg',
-        title: 'on class',
-        date: 'a common school day',
-        description: 'with laughter in eyes'
+        title: 'mom climbing mountain',
+        date: 'a common day',
+        description: 'I always admire the persistance of my mother'
     },
     5: {
         image: '../images/mother 5.jpg',
-        title: 'beard karl',
-        date: 'a common school day',
-        description: 'handsome karl'
+        title: 'our cute cat in mom"s arm',
+        date: 'a common day',
+        description: 'I am really touched by the kind of my mom'
     },
     6: {
         image: '../images/mother 6.jpg',
-        title: 'beard karl',
-        date: 'a common school day',
-        description: 'handsome karl'
+        title: 'eating mom',
+        date: 'a common day',
+        description: 'I really like this restaurant. But sometimes my mom refuses to take me there due to the price. Fortunately, I have a boyfriend now hahaha'
     },
     7: {
         image: '../images/mother 7.jpg',
-        title: 'beard karl',
-        date: 'a common school day',
-        description: 'handsome karl'
+        title: 'walking mom',
+        date: 'a common day',
+        description: 'Mom"s dressing style impresses a lot'
     },
     8: {
         image: '../images/mother 8.jpg',
-        title: 'beard karl',
-        date: 'a common school day',
-        description: 'handsome karl'
+        title: 'mom watching TV series',
+        date: 'a common day',
+        description: 'cute mother'
     },
     9: {
         image: '../images/mother 9.jpg',
-        title: 'beard karl',
-        date: 'a common school day',
-        description: 'handsome karl'
+        title: 'mom looking at fishes',
+        date: 'a common day',
+        description: 'elegant mother'
     },
     10: {
         image: '../images/mother 10.jpg',
-        title: 'beard karl',
-        date: 'a common school day',
-        description: 'handsome karl'
+        title: 'sleeping mother',
+        date: 'a commong day',
+        description: 'huanhuan sitting on you'
     },
    
 };
