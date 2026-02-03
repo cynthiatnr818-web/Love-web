@@ -66,6 +66,36 @@ function openPhotoModal(photoId) {
         date: 'a common school day',
         description: 'handsome karl'
     },
+    6: {
+        image: '../images/mother 6.jpg',
+        title: 'beard karl',
+        date: 'a common school day',
+        description: 'handsome karl'
+    },
+    7: {
+        image: '../images/mother 7.jpg',
+        title: 'beard karl',
+        date: 'a common school day',
+        description: 'handsome karl'
+    },
+    8: {
+        image: '../images/mother 8.jpg',
+        title: 'beard karl',
+        date: 'a common school day',
+        description: 'handsome karl'
+    },
+    9: {
+        image: '../images/mother 9.jpg',
+        title: 'beard karl',
+        date: 'a common school day',
+        description: 'handsome karl'
+    },
+    10: {
+        image: '../images/mother 10.jpg',
+        title: 'beard karl',
+        date: 'a common school day',
+        description: 'handsome karl'
+    },
    
 };
 
