@@ -67,31 +67,31 @@ function openPhotoModal(photoId) {
         description: 'I am really touched by the kind of my mom'
     },
     6: {
-        image: '../images/mother 6.jpg',
+        image: '../images/Mother 6.jpg',
         title: 'eating mom',
         date: 'a common day',
         description: 'I really like this restaurant. But sometimes my mom refuses to take me there due to the price. Fortunately, I have a boyfriend now hahaha'
     },
     7: {
-        image: '../images/mother 7.jpg',
+        image: '../images/Mother 7.jpg',
         title: 'walking mom',
         date: 'a common day',
         description: 'Mom"s dressing style impresses a lot'
     },
     8: {
-        image: '../images/mother 8.jpg',
+        image: '../images/Mother 8.jpg',
         title: 'mom watching TV series',
         date: 'a common day',
         description: 'cute mother'
     },
     9: {
-        image: '../images/mother 9.jpg',
+        image: '../images/Mother 9.jpg',
         title: 'mom looking at fishes',
         date: 'a common day',
         description: 'elegant mother'
     },
     10: {
-        image: '../images/mother 10.jpg',
+        image: '../images/Mother 10.jpg',
         title: 'sleeping mother',
         date: 'a commong day',
         description: 'huanhuan sitting on you'
